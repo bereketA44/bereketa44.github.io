@@ -120,92 +120,22 @@
             </div>
           </div>
 
-      <div class="container-full">
+      <div class="container-full" style="margin-top: 70px;">
         <div class="hero">
           <div class="row">
             <div class="col-sm-12">
               <div class="contacts-info-wrap parallax_info full-height over">
                 <div class="content-wrap">
-                  <div
-                    class="image-wrap full-height parallax-window full-height"
-                    data-parallax="scroll"
-                    data-position-y="top"
-                    data-bleed="250"
-                    data-position-x="center"
-                    data-image-src="images/christin-hume-505823.jpg"
-                  ></div>
                   <div class="content">
-                    <h2 class="title-main">Contact me</h2>
                     <div class="text">
-                      Are you interested in working together? Do you have any
-                      questions or just want to say hi?
+                      We have gotten your message! We will contact you soon.
                     </div>
-                    <div class="form-wrap form">
-                      <div
-                        role="form"
-                        class="wpcf7"
-                        id="wpcf7-f3290-p3218-o1"
-                        lang="en"
-                        dir="ltr"
-                      >
-                        <div class="screen-reader-response"></div>
-                        <form
-                          action="https://submit-form.com/GTy7t9aQ"
-                          method="POST"
-                          method="post"
-                          class="wpcf7-form"
-                          novalidate="novalidate"
-                          id="form"
-                        >
-                          <p>
-                            <span class="wpcf7-form-control-wrap name"
-                              ><input
-                                type="text"
-                                name="name"
-                                value=""
-                                size="40"
-                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                aria-required="true"
-                                aria-invalid="false"
-                                placeholder="Your name"
-                            /></span>
-                            <span class="wpcf7-form-control-wrap email">
-                              <input
-                                type="email"
-                                name="email"
-                                value=""
-                                size="40"
-                                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                aria-required="true"
-                                aria-invalid="false"
-                                placeholder="Your e-mail"
-                              />
-                            </span>
-                            <br />
-                            <span class="wpcf7-form-control-wrap textarea">
-                              <textarea
-                                name="message"
-                                cols="40"
-                                rows="10"
-                                class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                aria-required="true"
-                                aria-invalid="false"
-                                placeholder="Your message"
-                              ></textarea>
-                            </span>
-                            <br />
-                            <input
-                              type="submit"
-                              value="Send"
-                              class="wpcf7-form-control wpcf7-submit"
-                            />
-                            <span class="ajax-loader"></span>
-                          </p>
-                          <div
-                            class="wpcf7-response-output wpcf7-display-none"
-                          ></div>
-                        </form>
-                      </div>
+                    <div class="row margin-lg-70t margin-lg-90b margin-md-70b margin-sm-70b margin-xs-40t margin-xs-60b">
+                        <div class="col-sm-12 ">
+                            <div class="button-wrapper text-center">
+                                <a href="./index.html" class="a-btn-3">Go to home page</a>
+                            </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -294,8 +224,14 @@
           url: "https://submit-form.com/GTy7t9aQ",
           data: formData,
           success: function () {
-            // show success message
+            console.log("test");
+            window.location = 'http://www.yomiphotography.com/';
           },
+          error: function(xhr, status, error) {
+            console.log("test");
+            // show error message 
+            // $('#msg').text('Error submitting form'); 
+        }
         });
       });
     </script>
