@@ -213,27 +213,5 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
     <script type="text/javascript" src="js/imagesloaded.min.js"></script>
-    <script>
-      $("#form").submit(function (e) {
-        e.preventDefault(); // prevent default form submission
-
-        var formData = $(this).serialize();
-
-        $.ajax({
-          type: "POST",
-          url: "https://submit-form.com/GTy7t9aQ",
-          data: formData,
-          success: function () {
-            console.log("test");
-            window.location = 'http://www.yomiphotography.com/';
-          },
-          error: function(xhr, status, error) {
-            console.log("test");
-            // show error message 
-            // $('#msg').text('Error submitting form'); 
-        }
-        });
-      });
-    </script>
   </body>
 </html>

@@ -150,9 +150,6 @@
                       >
                         <div class="screen-reader-response"></div>
                         <form
-                          action="https://submit-form.com/GTy7t9aQ"
-                          method="POST"
-                          method="post"
                           class="wpcf7-form"
                           novalidate="novalidate"
                           id="form"
@@ -295,7 +292,12 @@
           data: formData,
           success: function () {
             // show success message
+            console.log("test");
           },
+          error: function () {
+            console.log("teste");
+            window.location = "https://www.yomiphotography.com/conf.html"
+          }
         });
       });
     </script>
